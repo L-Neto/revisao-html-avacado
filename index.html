@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisão de HTML Avançado</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+
+    <link rel="shortcut icon" href="./favcon/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="pagina">
+        <header class="cabecalho">
+            <h1 class="style-h1">Revisando conteúdos HTML Avançado</h1>
+            <nav>
+                <ul>
+                    <li><a href="https://www.dreamstime.com/best-stock-photos?gclid=CjwKCAjwitShBhA6EiwAq3RqAxNSOkogePPQ4fAgT6btjGqoq-VAbyDjFmaFJzJ5yKh3MqLpeECwShoC7koQAvD_BwE#ref401" target="_blank">picture</a></li>
+                    <li><a href="https://favicon.io/" target="_blank">Favicon</a></li>
+                    <li><a href="https://www.devmedia.com.br/html-entities-html-symbols-html-characters/1011" target="_blank">Emogis e caracteres</a></li>
+                    <li><a href="https://convertio.co/pt/ogg-mp3/" target="_blank">Áudios</a></li>
+                    <li><a href="https://www.pexels.com/pt-br/videos/" target="_blank">Vídeos</a></li>
+                </ul>
+            </nav>
+        </header>
+    <br><br><br>
+        <section>
+            <h2 class="style-h2">Tag picture</h2>
+            <picture class="style-pic">
+                <source srcset="image/ceu-fantasia-desktop.jpg" media="(min-width: 768px)">
+                <source srcset="image/ceu-fantasia-tablet.jpg" media="(min-width: 475px)">
+                <img src="./image/ceu-fantasia-celular.jpg" alt="É uma imagem de um ceu psicodélico com um homem observando">
+        </picture>
+        <p class="style-p">A tag picture é usada para colocar uma imagem, e carregar as imagens em tamanhos diferentes pensando em todos os usuários, de desktop, tablet ou celular. Se reduzirmos a tela, podemos ver a redução da imagem conforme descrito no código.</p>
+        </section>
+
+        <br>
+
+        <section>
+            <h2 class="style-h2">Favicon</h2>
+            <p class="style-p">Favicon é o ícone da página, aquele ícone que fica no canto esquerdo da página no navegador</p>
+            <picture class="style-pic">
+                <source srcset="image/Untitled-desktop.jpg" media="(min-width: 768px)">
+                <source srcset="image/Untitled-tablet.jpg" media="(min-width: 475px)">
+                <img src="./image/Untitled-cel.jpg" alt="É um print para exemplificar o que é favicon">
+            </picture>
+            <br>
+            <p class="style-p">Abaixo segue um print do favcon da nossa página:</p>
+                <img class="style-pic" src="./image/favcon-revisao.png" alt="É um print monstrando o favcon da página">
+        </section>
+
+        <br>
+
+        <section>
+            <h2 class="style-h2"> Emogis e caracteres</h2>
+            <p class="style-p">Emogis são emoticons, símbolos que expressão reações, emoções:</p>
+            <p class="style-emotion">
+                &#128151;
+                &#128525;
+                &#128516;
+            </p>
+            <br>
+            <p class="style-p">Para fazer essas representações, esse emotions, usamos algumas marcações especiais:</p>
+                <img class="style-pic" src="./image/marcacao-dos-emotions.png" alt="É a foto para monstrar quais marcações usamos para os emotions citados na página">
+            <br>
+            <p class="style-p">Os caracteres especiais são pouco usados, pois o HTML evoluiu e agora aceita os caracteres:</p>
+            <p class="style-caracteres">
+                &copy; 
+                &nbsp; 
+                &aacute; 
+            </p>
+            <img class="style-pic" src="./image/marcacao-dos-caracteres.png" alt="É um print para mostrar quais marcações usamos para os caracteres citados na página">
+        </section>
+
+        <br>
+
+        <section>
+            <h2 class="style-h2">Áudios</h2>
+            <p class="style-p">A tag de áudio é usada para anexar um arquivo MP3 para ser reproduzido dentro da página ou sistema.</p>
+            <audio class="style-audio" src="./audio/teste-de-audio-1.mp3" controls></audio>
+            <!-- <audio src="./audio/teste-de-audio-2.ogg" controls autoplay></audio> -->
+            <!-- Deixei comentado no código um arquivo teste-de-audio-2.ogg configurado com autoplay, só para conhecimento. Não será usado. -->
+        </section>
+        
+        <br>
+
+        <section>
+            <h2 class="style-h2">Vídeos</h2>
+            <p class="style-p">A tag de vídeo é usado para embedar, abexar um arquivo MP4 para ser reproduzido dentro da página ou sistema.</p>
+            <video class="style-video" src="./videos/nascer-do-sol.mp4" width="500" controls muted></video>
+        </section>
+    </div>
+</body>
+</html>
